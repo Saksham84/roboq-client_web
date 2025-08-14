@@ -44,7 +44,7 @@ export default function PaymentPage({ id }: { id: string }) {
 
       // Step 2 — Open Razorpay checkout
       const options = {
-        key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID || "rzp_test_525mRzEtTSEZ6m", // public key
+        key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID, // public key
         amount: order.amount,
         currency: order.currency,
         name: "My Academy",
